@@ -1,0 +1,225 @@
+Compiling your contracts...
+===========================
+> Compiling ./contracts/BridgeBase.sol
+> Compiling ./contracts/BscBridge.sol
+> Compiling ./contracts/BscDex.sol
+> Compiling ./contracts/BscNftFractionsRepository.sol
+> Compiling ./contracts/DexBase.sol
+> Compiling ./contracts/ERC721Mock.sol
+> Compiling ./contracts/INftFractionsRepository.sol
+> Compiling ./contracts/MaticBridge.sol
+> Compiling ./contracts/MaticDex.sol
+> Compiling ./contracts/MaticNftFractionsRepository.sol
+> Compiling ./contracts/NftFractionsRepositoryBase.sol
+> Compiling @openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol
+> Compiling @openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol
+> Compiling @openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol
+> Compiling @openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol
+> Compiling @openzeppelin/contracts-upgradeable/token/ERC1155/ERC1155Upgradeable.sol
+> Compiling @openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155ReceiverUpgradeable.sol
+> Compiling @openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol
+> Compiling @openzeppelin/contracts-upgradeable/token/ERC1155/extensions/IERC1155MetadataURIUpgradeable.sol
+> Compiling @openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol
+> Compiling @openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol
+> Compiling @openzeppelin/contracts-upgradeable/utils/CountersUpgradeable.sol
+> Compiling @openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol
+> Compiling @openzeppelin/contracts-upgradeable/utils/introspection/IERC165Upgradeable.sol
+> Compiling @openzeppelin/contracts/access/Ownable.sol
+> Compiling @openzeppelin/contracts/security/Pausable.sol
+> Compiling @openzeppelin/contracts/token/ERC721/ERC721.sol
+> Compiling @openzeppelin/contracts/token/ERC721/IERC721.sol
+> Compiling @openzeppelin/contracts/token/ERC721/IERC721Receiver.sol
+> Compiling @openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol
+> Compiling @openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol
+> Compiling @openzeppelin/contracts/utils/Address.sol
+> Compiling @openzeppelin/contracts/utils/Context.sol
+> Compiling @openzeppelin/contracts/utils/Strings.sol
+> Compiling @openzeppelin/contracts/utils/introspection/ERC165.sol
+> Compiling @openzeppelin/contracts/utils/introspection/IERC165.sol
+> Artifacts written to /home/janus/work/react.js-solidity_nft-fractions-dex/src/contracts
+> Compiled successfully using:
+   - solc: 0.8.10+commit.fc410830.Emscripten.clang
+
+
+
+Starting migrations...
+======================
+> Network name:    'bscTestnet'
+> Network id:      97
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_nft_fractions_repository_migration.js
+=======================================
+
+   Deploying 'BscNftFractionsRepository'
+   -------------------------------------
+   > transaction hash:    0xadb2c60f3ce834120ce79406f7e2e8033a01db1cc7f5048fdc1e9ff2215093cc
+   > Blocks: 4            Seconds: 14
+   > contract address:    0x53C9305D21E87107C1F4be5aD3BB4AeD429Ae282
+   > block number:        15087059
+   > block timestamp:     1639852218
+   > account:             0x04BFca9b23e8110E10C28941E9A9c2f833019d0D
+   > balance:             5.03628146975
+   > gas used:            4420601 (0x4373f9)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04420601 ETH
+
+   Pausing for 10 confirmations...
+   -------------------------------
+   > confirmation number: 2 (block: 15087063)
+   > confirmation number: 4 (block: 15087065)
+   > confirmation number: 5 (block: 15087066)
+   > confirmation number: 6 (block: 15087067)
+   > confirmation number: 8 (block: 15087069)
+   > confirmation number: 9 (block: 15087070)
+   > confirmation number: 11 (block: 15087072)
+
+   Deploying 'ProxyAdmin'
+   ----------------------
+   > transaction hash:    0x50d18928a60495881fae2d968f5a4929d5890d475bcb421b94e6606eea2b7cf8
+   > Blocks: 5            Seconds: 15
+   > contract address:    0x300eF2f3E362B453835638A297A52b09A2e453f6
+   > block number:        15087079
+   > block timestamp:     1639852278
+   > account:             0x04BFca9b23e8110E10C28941E9A9c2f833019d0D
+   > balance:             5.03145426975
+   > gas used:            482720 (0x75da0)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0048272 ETH
+
+   Pausing for 10 confirmations...
+   -------------------------------
+   > confirmation number: 2 (block: 15087082)
+   > confirmation number: 3 (block: 15087083)
+   > confirmation number: 5 (block: 15087085)
+   > confirmation number: 6 (block: 15087086)
+   > confirmation number: 7 (block: 15087087)
+   > confirmation number: 9 (block: 15087089)
+   > confirmation number: 10 (block: 15087090)
+
+   Deploying 'TransparentUpgradeableProxy'
+   ---------------------------------------
+   > transaction hash:    0x6b31a7ce8063be57cd723d13fa0234fba5e273445f6444a1841291100e3d92d7
+   > Blocks: 4            Seconds: 13
+   > contract address:    0x70a121217441854DE3B2a40C5B081ECd6B3Caf69
+   > block number:        15087098
+   > block timestamp:     1639852335
+   > account:             0x04BFca9b23e8110E10C28941E9A9c2f833019d0D
+   > balance:             5.02470437975
+   > gas used:            674989 (0xa4cad)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00674989 ETH
+
+   Pausing for 10 confirmations...
+   -------------------------------
+   > confirmation number: 2 (block: 15087102)
+   > confirmation number: 3 (block: 15087103)
+   > confirmation number: 5 (block: 15087105)
+   > confirmation number: 6 (block: 15087106)
+   > confirmation number: 8 (block: 15087108)
+   > confirmation number: 9 (block: 15087109)
+   > confirmation number: 10 (block: 15087110)
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:           0.0557831 ETH
+
+
+2_ERC721Mock_migration.js
+=========================
+   -------------------------------------
+   > Total cost:                   0 ETH
+
+
+3_dex_migration.js
+==================
+
+   Deploying 'BscDex'
+   ------------------
+   > transaction hash:    0xfe36b24cfa2518e3f008d1096807eb5295fe1d6fbd18cedb76fd4ef489164a88
+   > Blocks: 6            Seconds: 20
+   > contract address:    0xd9b8224a5Cf4FC4f993c9029C729053d7a874B61
+   > block number:        15087126
+   > block timestamp:     1639852419
+   > account:             0x04BFca9b23e8110E10C28941E9A9c2f833019d0D
+   > balance:             4.98679328975
+   > gas used:            3791109 (0x39d905)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03791109 ETH
+
+   Pausing for 10 confirmations...
+   -------------------------------
+   > confirmation number: 3 (block: 15087136)
+   > confirmation number: 5 (block: 15087138)
+   > confirmation number: 7 (block: 15087140)
+   > confirmation number: 8 (block: 15087141)
+   > confirmation number: 9 (block: 15087142)
+   > confirmation number: 10 (block: 15087143)
+
+   Deploying 'TransparentUpgradeableProxy'
+   ---------------------------------------
+   > transaction hash:    0xb545c49a6dd85d918abf80c0561765f756ee7badf14788beb467a987d3041aea
+   > Blocks: 7            Seconds: 24
+   > contract address:    0x53152d4a7bc4bC864D38A2E1682C65C25B218304
+   > block number:        15087158
+   > block timestamp:     1639852515
+   > account:             0x04BFca9b23e8110E10C28941E9A9c2f833019d0D
+   > balance:             4.98029161975
+   > gas used:            650167 (0x9ebb7)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00650167 ETH
+
+   Pausing for 10 confirmations...
+   -------------------------------
+   > confirmation number: 1 (block: 15087163)
+   > confirmation number: 4 (block: 15087166)
+   > confirmation number: 5 (block: 15087167)
+   > confirmation number: 6 (block: 15087168)
+   > confirmation number: 7 (block: 15087169)
+   > confirmation number: 8 (block: 15087170)
+   > confirmation number: 10 (block: 15087172)
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04441276 ETH
+
+
+4_bridge_migrations.js
+======================
+
+   Deploying 'BscBridge'
+   ---------------------
+   > transaction hash:    0x4da3d1e243205d04f4b1001e0f4754f77a9b5ba107ec5b0672dd5dec47de43ee
+   > Blocks: 6            Seconds: 21
+   > contract address:    0x05225eb05eeDCE1b5E45034715E5c15fD8F86bCe
+   > block number:        15087188
+   > block timestamp:     1639852605
+   > account:             0x04BFca9b23e8110E10C28941E9A9c2f833019d0D
+   > balance:             4.96655824975
+   > gas used:            1326705 (0x143e71)
+   > gas price:           10 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01326705 ETH
+
+   Pausing for 10 confirmations...
+   -------------------------------
+   > confirmation number: 2 (block: 15087195)
+   > confirmation number: 3 (block: 15087196)
+   > confirmation number: 4 (block: 15087197)
+   > confirmation number: 6 (block: 15087199)
+   > confirmation number: 7 (block: 15087200)
+   > confirmation number: 8 (block: 15087201)
+   > confirmation number: 10 (block: 15087203)
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.01326705 ETH
+
+
+Summary
+=======
+> Total deployments:   6
+> Final cost:          0.11346291 ETH
