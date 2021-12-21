@@ -1,0 +1,176 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x00E2F1FAF95f0Ce58123033f471A34AEcEf77C3d",
+    "txHash": "0x6070257dd0b8d4392814c0674845acf0b039aa97b11cd6d5049078d8cc5815d0"
+  },
+  "proxies": [
+    {
+      "address": "0x17beF4b2f2f89409b2885E6cAbCeb3eEAabE88BA",
+      "txHash": "0x3665d871a2c441d104d328d23c773cef05a8c9faa570ead7ef6da8bbe31a05fd",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "dca954f5ea8d545c2e35e7bf1edd4d8a65bf07816b4774bca4092a120e82be4d": {
+      "address": "0x617Ca9FCBe434b321a2bB1e42190F27d778E5C0e",
+      "txHash": "0xc9bda77e6a3a020339d8c2b1baee9401f0e8ff7db19a7aacba781a3701141bf2",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "ERC165Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:36"
+          },
+          {
+            "contract": "ERC1155Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_uint256))",
+            "src": "../@openzeppelin/contracts-upgradeable/token/ERC1155/ERC1155Upgradeable.sol:25"
+          },
+          {
+            "contract": "ERC1155Upgradeable",
+            "label": "_operatorApprovals",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+            "src": "../@openzeppelin/contracts-upgradeable/token/ERC1155/ERC1155Upgradeable.sol:28"
+          },
+          {
+            "contract": "ERC1155Upgradeable",
+            "label": "_uri",
+            "type": "t_string_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/token/ERC1155/ERC1155Upgradeable.sol:31"
+          },
+          {
+            "contract": "ERC1155Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)47_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/token/ERC1155/ERC1155Upgradeable.sol:471"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:97"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "NftFractionsRepositoryBase",
+            "label": "tokens",
+            "type": "t_mapping(t_uint256,t_struct(Token)6446_storage)",
+            "src": "../project:/contracts/NftFractionsRepositoryBase.sol:21"
+          },
+          {
+            "contract": "MaticNftFractionsRepository",
+            "label": "_ids",
+            "type": "t_struct(Counter)1966_storage",
+            "src": "../project:/contracts/MaticNftFractionsRepository.sol:16"
+          }
+        ],
+        "types": {
+          "t_struct(Counter)1966_storage": {
+            "label": "struct CountersUpgradeable.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_uint256,t_struct(Token)6446_storage)": {
+            "label": "mapping(uint256 => struct NftFractionsRepositoryBase.Token)"
+          },
+          "t_struct(Token)6446_storage": {
+            "label": "struct NftFractionsRepositoryBase.Token",
+            "members": [
+              {
+                "label": "erc721ContractAddress",
+                "type": "t_address"
+              },
+              {
+                "label": "erc721TokenId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalFractionsAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "tokenURI",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(uint256 => mapping(address => uint256))"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+            "label": "mapping(address => mapping(address => bool))"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_array(t_uint256)47_storage": {
+            "label": "uint256[47]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    }
+  }
+}

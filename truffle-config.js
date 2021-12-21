@@ -5,7 +5,7 @@ const fs = require('fs');
 const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
-  contracts_build_directory: "./src/contracts",
+  contracts_build_directory: "./src/contracts/matic",
 
   networks: {
     development: {
@@ -17,9 +17,11 @@ module.exports = {
       networkCheckTimeout: 100000,
       provider: () => new HDWalletProvider(mnemonic, `https://rpc-mumbai.maticvigil.com/`),
       network_id: 80001,
-      confirmations: 2,
+      confirmations: 10,
       timeoutBlocks: 200,
-      skipDryRun: true
+      skipDryRun: true,
+      from: process.env.ACCOUNT_ADDRESS,
+      networkCheckTimeout: 1000000,
     },
     bscTestnet: {
       provider: () => new HDWalletProvider(mnemonic, `https://data-seed-prebsc-1-s1.binance.org:8545`),
@@ -29,14 +31,14 @@ module.exports = {
       skipDryRun: true,
       from: process.env.ACCOUNT_ADDRESS,
       networkCheckTimeout: 1000000,
-    },    
+    },
   },
 
   plugins: [
     'truffle-plugin-verify'
   ],
   api_keys: {
-    etherscan: process.env.BSCSCAN_API_KEY
+    etherscan: process.env.MATICSCAN_API_KEY
   },
 
   mocha: {
