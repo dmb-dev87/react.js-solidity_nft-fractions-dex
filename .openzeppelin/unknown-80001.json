@@ -1,30 +1,35 @@
 {
   "manifestVersion": "3.2",
   "admin": {
-    "address": "0xf0eB7Ef6C6d05aF88e882cf1dbCC38a87cc6De7c",
-    "txHash": "0x08c39883772255854f9e07e58b286318addca055d7b4b8df959fc89b1d6dd046"
+    "address": "0x6f44b4a1771ef4779Cd92F3a92dD53C604B5B7DB",
+    "txHash": "0x9a23f9e9922d6c0c12860879eb601d51b81f7b0789a8c1eeb5334533c1436355"
   },
   "proxies": [
     {
-      "address": "0xb1C7908a1Ba35130379c36554df6789c1563FED0",
-      "txHash": "0x7c7053494999f23551c2a473e6ff654e9db66a80c778b41df66bdbf7339b9af5",
+      "address": "0xD4A1E8275c589c58D8d8A20A3cF1e0Aea439668D",
+      "txHash": "0x99e98c1760f78473bb66aa7aa136a2927097c741c95565750aff9f0a2dbca18c",
       "kind": "transparent"
     },
     {
-      "address": "0x521deAfa129Fbf82701fb8360A5E62610FcE90DD",
-      "txHash": "0x8a400a7db2a5138dc8695fcf7977683c03da97f22f426c3038479f86d84e7ad4",
+      "address": "0x801b2334761Db552AF51be2AB7e5ca63E2b467C5",
+      "txHash": "0x905a67e8f77d28cb952fbc1d70436885884f47d7df940cada6638aabf96863b9",
       "kind": "transparent"
     },
     {
-      "address": "0xad5131E36899d38a214CFAE0ca4603b27e32A813",
-      "txHash": "0x08585977c621f6e90544dad975af48649dbd6d42cdf012ce547fb674a90f3c2e",
+      "address": "0x2135d14847CA6AC60394fb39B9BDe50Ae46fcc57",
+      "txHash": "0xaf1c850c8355f4351ae8a33dbf3f679d29fca289093338cb486b1aa62b8dfb28",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xC9b5b29c8Ed6ECaDa7593ca78E6c0DbC44bC3beC",
+      "txHash": "0x8b07b0bf4008e3128687740c0aaecd3d6e54bd406fd196745ee615337b78fbe3",
       "kind": "transparent"
     }
   ],
   "impls": {
     "dca954f5ea8d545c2e35e7bf1edd4d8a65bf07816b4774bca4092a120e82be4d": {
-      "address": "0x0801B5DD2E14790F6Cd027815E299fA93272Ae78",
-      "txHash": "0x9ca6ef19b7ab2c96aedabde58f943b2b021f69d268977e272d11aed0ff726971",
+      "address": "0x31C02824A91844E7ECc6eA922DcC674383F9E34c",
+      "txHash": "0xd9811d949611fc2a5e5a51b5fb1e6b2b7eed69c4d2743ba24cdf634146264cf8",
       "layout": {
         "storage": [
           {
@@ -175,6 +180,207 @@
           },
           "t_array(t_uint256)47_storage": {
             "label": "uint256[47]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "02857e8ba40c1d9e7378752bc137c03b6afeffa8f17d69f0a20a509c9af51e9c": {
+      "address": "0x0ce20711258CDa80Da6dfe34506e96d55317f322",
+      "txHash": "0x74693a3034dc9f53f834e268b05e061558e4cb4be1e9e160e97b675621d81d17",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:97"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "../@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:68"
+          },
+          {
+            "contract": "DexBase",
+            "label": "_orderIds",
+            "type": "t_struct(Counter)1966_storage",
+            "src": "../project:/contracts/DexBase.sol:32"
+          },
+          {
+            "contract": "DexBase",
+            "label": "_tradeIds",
+            "type": "t_struct(Counter)1966_storage",
+            "src": "../project:/contracts/DexBase.sol:33"
+          },
+          {
+            "contract": "DexBase",
+            "label": "ethBalance",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../project:/contracts/DexBase.sol:35"
+          },
+          {
+            "contract": "DexBase",
+            "label": "ethReservedBalance",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../project:/contracts/DexBase.sol:36"
+          },
+          {
+            "contract": "DexBase",
+            "label": "orderBook",
+            "type": "t_mapping(t_uint256,t_mapping(t_uint256,t_array(t_struct(Order)4772_storage)dyn_storage))",
+            "src": "../project:/contracts/DexBase.sol:37"
+          },
+          {
+            "contract": "DexBase",
+            "label": "sharesReserved",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_uint256))",
+            "src": "../project:/contracts/DexBase.sol:38"
+          },
+          {
+            "contract": "DexBase",
+            "label": "nftFractionsRepository",
+            "type": "t_contract(INftFractionsRepository)5958",
+            "src": "../project:/contracts/DexBase.sol:39"
+          },
+          {
+            "contract": "MaticDex",
+            "label": "_ids",
+            "type": "t_struct(Counter)1966_storage",
+            "src": "../project:/contracts/MaticDex.sol:23"
+          }
+        ],
+        "types": {
+          "t_struct(Counter)1966_storage": {
+            "label": "struct CountersUpgradeable.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_uint256,t_mapping(t_uint256,t_array(t_struct(Order)4772_storage)dyn_storage))": {
+            "label": "mapping(uint256 => mapping(uint256 => struct DexBase.Order[]))"
+          },
+          "t_mapping(t_uint256,t_array(t_struct(Order)4772_storage)dyn_storage)": {
+            "label": "mapping(uint256 => struct DexBase.Order[])"
+          },
+          "t_array(t_struct(Order)4772_storage)dyn_storage": {
+            "label": "struct DexBase.Order[]"
+          },
+          "t_struct(Order)4772_storage": {
+            "label": "struct DexBase.Order",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256"
+              },
+              {
+                "label": "trader",
+                "type": "t_address"
+              },
+              {
+                "label": "side",
+                "type": "t_enum(Side)4754"
+              },
+              {
+                "label": "tokenId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "filled",
+                "type": "t_uint256"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256"
+              },
+              {
+                "label": "date",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_enum(Side)4754": {
+            "label": "enum DexBase.Side",
+            "members": [
+              "BUY",
+              "SELL"
+            ]
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_uint256))": {
+            "label": "mapping(address => mapping(uint256 => uint256))"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_contract(INftFractionsRepository)5958": {
+            "label": "contract INftFractionsRepository"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_bool": {
+            "label": "bool"
           },
           "t_array(t_uint256)50_storage": {
             "label": "uint256[50]"
